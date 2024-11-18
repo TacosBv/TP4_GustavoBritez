@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página 3 - Tabla</title>
+</head>
+<body>
+    <header>
+        <h1>Tabla de Operaciones</h1>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th class="animated-header">OPERACIÓN</th>
+                    <th class="animated-header">DESCRIPCIÓN</th>
+                    <th class="animated-header">BOTONES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MULTIPLICACIÓN</td>
+                    <td>Multiplica 2 números ingresados</td>
+                    <td><button onclick="calculate('multiplication')">Calcular</button></td>
+                </tr>
+                <tr>
+                    <td>EXPONENTE 2</td>
+                    <td>Eleva al cuadrado 1 número ingresado</td>
+                    <td><button onclick="calculate('exponentiation')">Calcular</button></td>
+                </tr>
+                <tr>
+                    <td>RESTA</td>
+                    <td>Resta 2 números ingresados</td>
+                    <td><button onclick="calculate('subtraction')">Calcular</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="button-container">
+            <a href="index.html" class="animated-button">Inicio</a>
+            <a href="pagina2.html" class="animated-button">Galería</a>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 GustavoB.</p>
+    </footer>
+    <script src="scripts-table.js"></script>
+</body>
+</html>

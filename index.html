@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="page1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página Principal</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Página Principal <span id="user-name"></span></h1>
+    </header>
+    <main>
+        <div class="description">
+            <p class="explore">En esta página puedes explorar:</p>
+            <ul>
+                <li><strong>Galería</strong>: Una galería interactiva con animaciones únicas.</li>
+                <li><strong>Tabla</strong>: Una tabla con operaciones matemáticas interactivas.</li>
+            </ul>
+            <div class="explore-button">
+                <a href="pagina2.html" class="animated-button">Ir a la Galería</a>
+                <a href="pagina3.html" class="animated-button">Ir a la Tabla</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 GustavoB.</p>
+    </footer>
+
+    <script>
+        // Solicitar el nombre al usuario
+        let userName = prompt("¿Cuál es tu nombre?");
+        document.getElementById("user-name").textContent = userName ? userName : "Visitante"; // Nombre por defecto si no se ingresa
+    </script>
+</body>
+</html>
